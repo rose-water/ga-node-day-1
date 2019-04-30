@@ -25,7 +25,8 @@ app.get('/getFilmData', function(req, res) {
   // make an api request to the ghibli api /films endpoint
   request(ghibliFilmsUrl, options, function(error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body);
+      // console.log(body);
+      res.send(body);
     } else {
       console.err(error);
     }
@@ -42,7 +43,8 @@ app.get('/checkName/:name', function(req, res) {
 
   request(url, options, function(error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body);
+      res.send(body);
+      // console.log(body);
     } else {
       console.err(error);
     }
@@ -60,7 +62,8 @@ app.get('/getAmiiboData', function(req, res) {
 
   request(url, options, function(error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body);
+      res.send(body);
+      // console.log(body);
     } else {
       console.err(error);
     }
@@ -78,7 +81,8 @@ app.get('/getHelloInLang', function(req, res) {
 
   request(url, options, function(error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body);
+      res.send(body);
+      // console.log(body);
     } else {
       console.err(error);
     }

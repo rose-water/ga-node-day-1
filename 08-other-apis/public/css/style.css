@@ -2,7 +2,7 @@ html, body {
   margin: 0 auto;
 }
 
-button#data-btn {
+button {
   font-size: 16px;
   height: 48px;
   width: 200px;
@@ -11,6 +11,8 @@ button#data-btn {
   border: 1px solid #494949;
 }
 
-button#data-btn:hover {
+button:hover {
   cursor: pointer;
+  background: black;
+  color: white;
 }
